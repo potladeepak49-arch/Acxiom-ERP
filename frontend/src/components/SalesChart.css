@@ -1,0 +1,71 @@
+.charts-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 22px;
+    margin-top: 24px;
+}
+
+.chart-panel {
+    min-width: 0;
+    padding: 23px;
+    background: #ffffff;
+    border: 1px solid #edf0f5;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(25, 39, 70, 0.03);
+}
+
+.chart-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.chart-heading h5 {
+    margin: 0;
+    color: #192746;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.chart-heading p {
+    margin: 6px 0 0;
+    color: #929bad;
+    font-size: 12px;
+}
+
+.chart-period {
+    padding: 7px 10px;
+    border-radius: 6px;
+    background: #f2f5fc;
+    color: #52658f;
+    font-size: 11px;
+}
+
+.sales-chart-container {
+    height: 280px;
+}
+
+.lead-chart-container {
+    height: 280px;
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .chart-panel {
+        padding: 16px;
+    }
+
+    .sales-chart-container,
+    .lead-chart-container {
+        height: 240px;
+    }
+}

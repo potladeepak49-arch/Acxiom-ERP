@@ -1,0 +1,69 @@
+.stat-card {
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #edf0f5;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(25, 39, 70, 0.03);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(25, 39, 70, 0.07);
+}
+
+.stat-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.stat-card-top > span {
+    color: #778297;
+    font-size: 13px;
+    font-weight: 550;
+}
+
+.stat-icon {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.stat-icon.customers {
+    color: #3154a3;
+    background: #eaf0ff;
+}
+
+.stat-icon.leads {
+    color: #16856b;
+    background: #e5f7f1;
+}
+
+.stat-icon.opportunities {
+    color: #a36b16;
+    background: #fff4df;
+}
+
+.stat-icon.revenue {
+    color: #8154b5;
+    background: #f2eaff;
+}
+
+.stat-card h3 {
+    margin: 20px 0 7px;
+    color: #192746;
+    font-size: 29px;
+    font-weight: 750;
+    letter-spacing: -0.8px;
+}
+
+.stat-card p {
+    margin: 0;
+    color: #929bad;
+    font-size: 12px;
+}
